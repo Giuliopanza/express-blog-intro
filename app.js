@@ -68,3 +68,7 @@ app.get("/bacheca", (req, res) => {
 
     res.json(post)
 })
+
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`);
+    });
