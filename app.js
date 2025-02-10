@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
             <head>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Pizzeria</title>
+                <title>Blog</title>
             </head>
             <body>
             <h1>Server del mio blog</h1>
@@ -37,34 +37,34 @@ app.get("/", (req, res) => {
 app.get("/bacheca", (req, res) => {
 
 
-    const menu = [
+    const post = [
         {
             titolo: "Ciambellone",
-            contenuto: "dolce",
+            contenuto: "Il ciambellone è un dolce soffice e genuino, perfetto per la colazione o la merenda. Preparato con ingredienti semplici come uova, farina, zucchero e latte, può essere arricchito con vaniglia, limone o cacao.",
             image: "img/ciambellone.jpeg",
-            ingredients: ["farina", "latte"]
+            tags: ["dolce", "colazione", "ciambellone", "soffice", "tradizione"]
         }, {
             titolo: "Cracker Barbabietola",
-            contenuto: "salato",
+            contenuto: "I cracker alla barbabietola sono uno snack croccante e salutare, dal colore vivace e dal gusto leggermente dolce. Ottimi da servire con hummus, formaggi o salse.",
             image: "img/cracker_barbabietola.jpeg",
-            ingredients: ["cracker", "barbabietola", "origano"]
+            tags: ["snack", "healthy", "barbabietola", "cracker", "croccante"]
         }, {
-            titolo:  "Pane Fritto Dolce",
-            contenuto: "dolce",
+            titolo: "Pane Fritto Dolce",
+            contenuto: "Il pane fritto dolce è una golosità semplice e irresistibile. Fette di pane vengono immerse in latte e uova, fritte e spolverate con zucchero e cannella, perfette per una merenda golosa.",
             image: "img/pane_fritto_dolce.jpeg",
-            ingredients: ["pane", "olio", "zucchero"]
+            tags: ["dolce", "pane", "fritto", "tradizione", "facile"]
         }, {
             titolo: "Pasta Barbabietola",
-            contenuto: "salato",
+            contenuto: "Un primo piatto dal colore vivace e dal sapore delicato. La pasta alla barbabietola può essere preparata con una crema a base di barbabietola frullata, formaggio cremoso e noci, oppure direttamente con impasto alla barbabietola per un effetto scenografico. Perfetta per stupire a tavola!",
             image: "img/pasta_barbabietola.jpeg",
-            ingredients: ["pasta", "barbabietola"]
+            tags: ["pasta", "barbabietola", "ricettacolorata", "primo", "cucinaitaliana"]
         }, {
             titolo: "Torta Paesana",
-            contenuto: "dolce",
+            contenuto: "Un dolce tradizionale della cucina lombarda, nato per recuperare il pane raffermo. La torta paesana è un mix di latte, cacao, amaretti, pinoli e uvetta, che regala un sapore rustico e avvolgente. Perfetta per la colazione o come dessert casalingo.",
             image: "img/torta_paesana.jpeg",
-            ingredients: ["cioccolato", "cacao", "latte"]
+            tags: ["tortapaesana", "dolcetradizionale", "riciclointelligente", "dessert", "cucinalombarda"]
         }
     ]
 
-    res.json(menu)
+    res.json(post)
 })
